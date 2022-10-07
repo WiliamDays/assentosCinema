@@ -1,12 +1,21 @@
+const conatinerAssentos = document.querySelector('.assentos')
+const assentos = document.querySelectorAll(".fileira .assento: not(.assentoocupado)")
+const contador = document.querySelector("#contador")
+const total = document.querySelector("#total")
+const selecaoFilme = document.querySelector("#filme")
 
+povoarInterface()
 
+let precoIngresso = +selecaoFilme.value //Sinal de mais
 
+//Salvando filme e preç de ingresso correspondente
+function setFilme(){
 
+}
 
-
-
-
-
+function povoarInterface(){
+    const assentosSelcionados = 
+}
 
 
 

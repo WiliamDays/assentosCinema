@@ -10,14 +10,16 @@
     <body>
         <div class="containerEscolhaFilme">
             <label>Escolha o Filme:</label>
-            <select name="Filmes">
-                <option>Homem de Ferro</option>
-                <option>Homem de Ferro 2</option>
+            <select id ="filmes">
+                <option value="20">Homem de Ferro</option>
+                <option value= "25">Velozes e furiosos 9</option>
+                <option value= "22">A órfão</option>
+                <option value= "25">Sonic 2</option>
             </select>
         </div>
 
         <label class="legenda">Legenda:</label>
-        <div class="containerLegenda">
+        <div class="containerLegenda" id="filme">
             <span>Cadeira vazia</span><div class="assento"></div>
             <span>Cadeira selecionada</span><div class="assentoSelecionado"></div>
             <span>Cadeira ocupada</span><div class="assentoOcupado"></div>
@@ -83,7 +85,7 @@
             </div>
         </div>
 
-        <p class="total">Você selecionou 0 cadeiras no valor total de R$0,00</p>
+        <p class="total">Você selecionou <span id="contador">0</span> cadeiras no valor total de <span id="total">R$0,00</span></p>
 
         <button>Confirmar</button>
 

@@ -60,8 +60,8 @@ HTML
 
         <div class="fileira">
             <div class="assento"></div>
-            <div class="assento opcupado"></div>
-            <div class="assento ocupado"></div>
+            <div class="assentoOpcupado"></div>
+            <div class="assentoOcupado"></div>
             <div class="assento"></div>
             <div class="assento"></div>
             <div class="assento"></div>
@@ -74,17 +74,17 @@ HTML
             <div class="assento"></div>
             <div class="assento"></div>
             <div class="assento"></div>
-            <div class="assento ocupado"></div>
+            <div class="assentoOcupado"></div>
             <div class="assento"></div>
             <div class="assento"></div>
-            <div class="assento ocupado"></div>
+            <div class="assentoOcupado"></div>
         </div>
 
         <div class="fileira">
             <div class="assento"></div>
             <div class="assento"></div>
-            <div class="assento ocupado"></div>
-            <div class="assento ocupado"></div>
+            <div class="assentoOcupado"></div>
+            <div class="assentoOcupado"></div>
             <div class="assento"></div>
             <div class="assento"></div>
             <div class="assento"></div>
@@ -99,7 +99,7 @@ HTML
             <div class="assento"></div>
             <div class="assento"></div>
             <div class="assento"></div>
-            <div class="assento ocupado"></div>
+            <div class="assentoOcupado"></div>
         </div>
 
         <div class="fileira">
@@ -114,7 +114,7 @@ HTML
         </div>
     </div>
     
-    <p class="texto">Você selecionou <span id="countador">0</span> poltronas no valor de R$ <span id="total">0</span></p>
+    <p class="texto">Você selecionou <span id="contador">0</span> poltronas no valor de R$ <span id="total">0</span></p>
 
     <script src="main.js"></script>
 </body>
@@ -247,14 +247,14 @@ p. span {
 js
 
 const container = document.querySelector('.container');
-const seats = document.querySelectorAll('.row .seat:not(.occupied)');
-const count = document.getElementById('count');
+const seats = document.querySelectorAll('.fileira .assento:not(.assentoOcupado)');
+const count = document.getElementById('contador');
 const total = document.getElementById('total');
-const movieSelect = document.getElementById('movie');
+const filmesSelect = document.getElementById('filmes');
 
-populateUI();
+povoarUI();
 
-let ticketPrice = +movieSelect.value;
+let precoIngresso = +filmesSelect.value;
 
 // Salvando filme e preço de ingresso correspondente
 function setMovieData(movieIndex, moviePrice) {
