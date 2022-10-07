@@ -1,12 +1,16 @@
-Criar uma página de assento de cinema
+CRIAR UMA PÁGINA DE ASSENTO DE CINEMA
 
-Primeira versão: Requisitos
-	110 assentos
+Primeira versão: Ideação 
+	40 assentos
 	Nomeação de coluna e linhas 
 	Assentos ocupados e desocupados
 	Assentos já adicionados não tem como prencher mais
-	Cálculo da ocupação de assentos (50 reais por acentos)
-	 
+	Cálculo da ocupação de assentos (de 20 a 25 reais por acentos, a depender do filme)
+    Valor total e número de assentos reservados
+    Após a confirmação
+	
+
+INSPIRÇÃO: https://github.com/dev-arthur99/Estudo-bilheteria-de-cinema-JavaScript
 
 HTML
 
