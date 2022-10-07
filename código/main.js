@@ -8,13 +8,8 @@ povoarInterface()
 
 let precoIngresso = +selecaoFilme.value //Sinal de mais
 
-//Salvando filme e preç de ingresso correspondente
-function setFilme(){
-
-}
-
 function povoarInterface(){
-    const assentosSelcionados = 
+     
 }
 
 
