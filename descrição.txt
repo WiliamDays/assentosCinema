@@ -1,0 +1,322 @@
+Criar uma página de assento de cinema
+
+Primeira versão: Requisitos
+	110 assentos
+	Nomeação de coluna e linhas 
+	Assentos ocupados e desocupados
+	Assentos já adicionados não tem como prencher mais
+	Cálculo da ocupação de assentos (50 reais por acentos)
+	 
+
+HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syle.css">
+    <title>Escolha seu assento no Cinema!</title>
+</head>
+<body>
+    <div class="containerEscolhaFilme">
+        <label>Escolha o filme:</label>
+        <select id="filme">
+            <option value="15">Cassino (R$15)</option>
+            <option value="20">O Poderoso Chefão (R$20)</option>
+            <option value="18">Scarface (R$18)</option>
+            <option value="19">O Irlandês (R$19)</option>
+        </select>
+    </div>
+    
+    <ul class="mostruario">
+        <li>
+            <div class="assento"></div>
+            <small>N/A</small>
+        </li>
+        <li>
+            <div class="assentoSelecionado"></div>
+            <small>Selecionado</small>
+        </li>
+        <li>
+            <div class="assentoOcupado"></div>
+            <small>Ocupado</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="tela"></div>
+
+        <div class="fileira">
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+        </div>
+
+        <div class="fileira">
+            <div class="assento"></div>
+            <div class="assento opcupado"></div>
+            <div class="assento ocupado"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+        </div>
+
+        <div class="fileira">
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento ocupado"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento ocupado"></div>
+        </div>
+
+        <div class="fileira">
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento ocupado"></div>
+            <div class="assento ocupado"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+        </div>
+
+        <div class="fileira">
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento ocupado"></div>
+        </div>
+
+        <div class="fileira">
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+            <div class="assento"></div>
+        </div>
+    </div>
+    
+    <p class="texto">Você selecionou <span id="countador">0</span> poltronas no valor de R$ <span id="total">0</span></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+css
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.containerEscolhaFilme {
+    margin: 20px 0;
+}
+
+.containerEscolhaFilme select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.assento {
+    background-color: #444451;
+    height: 20px;
+    width: 25px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.assento.selecionado {
+    background-color: #6feaf6;
+}
+
+.assento.Ocupado {
+    background-color: #fff;
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+    margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.mostruario {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mostruario li {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.mostrurario li small {
+    margin-left: 2px;
+}
+
+.fileira {
+    display: flex;
+}
+
+.tela {
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.texto {
+    margin: 5px 0;
+}
+
+p. span {
+    color: #6feaf6;
+}
+
+
+
+
+
+
+js
+
+const container = document.querySelector('.container');
+const seats = document.querySelectorAll('.row .seat:not(.occupied)');
+const count = document.getElementById('count');
+const total = document.getElementById('total');
+const movieSelect = document.getElementById('movie');
+
+populateUI();
+
+let ticketPrice = +movieSelect.value;
+
+// Salvando filme e preço de ingresso correspondente
+function setMovieData(movieIndex, moviePrice) {
+  localStorage.setItem('selectedMovieIndex', movieIndex);
+  localStorage.setItem('selectedMoviePrice', moviePrice);
+}
+
+// Valor total
+function updateSelectedCount() {
+  const selectedSeats = document.querySelectorAll('.row .seat.selected');
+
+  const seatsIndex = [...selectedSeats].map(seat => [...seats].indexOf(seat));
+
+  localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex));
+
+  const selectedSeatsCount = selectedSeats.length;
+
+  count.innerText = selectedSeatsCount;
+  total.innerText = selectedSeatsCount * ticketPrice;
+}
+
+// Data do localstorage para a UI
+function populateUI() {
+  const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
+
+  if (selectedSeats !== null && selectedSeats.length > 0) {
+    seats.forEach((seat, index) => {
+      if (selectedSeats.indexOf(index) > -1) {
+        seat.classList.add('selected');
+      }
+    });
+  }
+
+  const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
+
+  if (selectedMovieIndex !== null) {
+    movieSelect.selectedIndex = selectedMovieIndex;
+  }
+}
+
+// Seleção de filme
+movieSelect.addEventListener('change', e => {
+  ticketPrice = +e.target.value;
+  setMovieData(e.target.selectedIndex, e.target.value);
+  updateSelectedCount();
+});
+
+// Seleção de poltrona
+container.addEventListener('click', e => {
+  if (
+    e.target.classList.contains('seat') &&
+    !e.target.classList.contains('occupied')
+  ) {
+    e.target.classList.toggle('selected');
+
+    updateSelectedCount();
+  }
+});
+
+// Contagem inicial
+updateSelectedCount();
+
+
+
+

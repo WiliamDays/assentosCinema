@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(2, 2, 58);
+    color: white;
+    height: 100vh;
+    margin: 0;
+}
+
+.containerEscolhaFilme{
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.containerEscolhaFilme select{
+    background-color: rgb(2, 2, 58);
+    color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 1em;
+}
+
+
+.legenda{
+    font-size: 2em;
+}
+
+.containerLegenda{
+    background-color: black;
+    width: 90vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 10px auto;
+    color: yellow;
+    font-size: 2em;
+    box-shadow: 2px 3px 7px black;
+}
+
+.assento{
+    background-color: white;
+    width: 80px;
+    height: 100px;
+    border-radius: 40% 40% 2px 2px;
+    margin-bottom: 5px;
+    box-shadow: 2px 3px 7px white;
+}
+
+.assentoSelecionado{
+    background-color: aqua;
+    width: 80px;
+    height: 100px;
+    border-radius: 40% 40% 2px 2px;
+    margin-bottom: 5px;
+    box-shadow: 2px 3px 7px aqua;
+}
+
+.assentoOcupado{
+    background-color: gray;
+    width: 80px;
+    height: 100px;
+    border-radius: 40% 40% 2px 2px;
+    margin-bottom: 5px;
+    box-shadow: 2px 3px 7px gray;
+}
+
+.tela{
+    background-color: white;
+    width: 70vw;
+    height: 50vh;
+    margin: 50px auto;
+    box-shadow: 2px 3px 7px white;
+}
+
+.assentos{
+    max-width: 70vw;
+    margin: auto;    
+}
+
+.fileira{
+    max-width: 70vw;
+    display: flex;
+    justify-content: space-between; 
+    margin: 20px 0;
+}
+
+.total{
+    font-size: 3em;
+    text-align: center;
+}
+
+button{
+    width: 25vw;
+    height: 7vh;
+    border-radius: 10px;
+    background-color: black;
+    color: yellow;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.assento{
+    width: 50px;
+}*/
+

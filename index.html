@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" text="text/css" href="./Imagens/icone.png">
+        <title>Escolha seu assento</title>
+    </head>
+    <body>
+        <div class="containerEscolhaFilme">
+            <label>Escolha o Filme:</label>
+            <select name="Filmes">
+                <option>Homem de Ferro</option>
+                <option>Homem de Ferro 2</option>
+            </select>
+        </div>
+
+        <label class="legenda">Legenda:</label>
+        <div class="containerLegenda">
+            <span>Cadeira vazia</span><div class="assento"></div>
+            <span>Cadeira selecionada</span><div class="assentoSelecionado"></div>
+            <span>Cadeira ocupada</span><div class="assentoOcupado"></div>
+        </div>
+        
+        
+        <div class="tela"></div>
+        
+        <div class="assentos">
+            <div class="fileira">
+                <div class="assentoOcupado"></div>
+                <div class="assentoOcupado"></div>
+                <div class="assentoOcupado"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+            </div>
+
+            <div class="fileira">
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assentoOcupado"></div>
+                <div class="assentoOcupado"></div>
+                <div class="assento"></div>
+            </div>
+
+            <div class="fileira">
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+            </div>
+
+            <div class="fileira">
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assentoOcupado"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+            </div>
+
+            <div class="fileira">
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assento"></div>
+                <div class="assentoOcupado"></div>
+                <div class="assento"></div>
+            </div>
+        </div>
+
+        <p class="total">Você selecionou 0 cadeiras no valor total de R$0,00</p>
+
+        <button>Confirmar</button>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--<table>
+        <tr>
+            <th> </th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+            <th>G</th>
+            <th>H</th>
+            <th>I</th>
+            <th>J</th>
+        </tr>
+        <tr>
+            <td>1-</td>
+            <td><img id="assento1a" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio" onclick="preencherAssento('1')"></td>
+            <td><img id="assento1b" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio" onclick="preencherAssento('2')"></td>
+        </tr>
+            <td><img id="assento1c" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento1d" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento1e" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento1f" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento1g" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento1h" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento1i" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento1j" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+        </tr>
+        <tr>
+            <td>2-</td>
+            <td><img id="assento2a" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento2b" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento2c" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento2d" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento2e" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento2f" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento2g" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento2h" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento2i" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento2j" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+        </tr>
+        <tr>
+            <td>3-</td>
+            <td><img id="assento3a" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento3b" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento3c" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento3d" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento3e" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento3f" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento3g" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento3h" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento3i" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento3j" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+        </tr>
+        <tr>
+            <td>4-</td>
+            <td><img id="assento4a" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento4b" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento4c" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento4d" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento4e" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento4f" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento4g" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento4h" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento4i" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento4j" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+        </tr>
+        <tr>
+            <td>5-</td>
+            <td><img id="assento5a" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento5b" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento5c" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento5d" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento5e" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento5f" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento5g" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento5h" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento5i" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento5j" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+        </tr>
+        <tr>
+            <td>6-</td>
+            <td><img id="assento6a" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento6b" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento6c" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento6d" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento6e" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento6f" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento6g" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento6h" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento6i" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento6j" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+        </tr>
+        <tr>
+            <td>7-</td>
+            <td><img id="assento7a" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento7b" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento7c" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento7d" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento7e" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento7f" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento7g" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento7h" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento7i" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento7j" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+        </tr>
+        <tr>
+            <td>8-</td>
+            <td><img id="assento8a" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento8b" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento8c" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento8d" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento8e" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento8f" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento8g" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento8h" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento8i" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento8j" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+        </tr>
+        <tr>
+            <td>9-</td>
+            <td><img id="assento9a" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento9b" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento9c" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento9d" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento9e" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento9f" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento9g" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento9h" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento9i" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento9j" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+        </tr>
+        <tr>
+            <td>10-</td>
+            <td><img id="assento10a" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento10b" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento10c" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento10d" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento10e" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento10f" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento10g" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento10h" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento10i" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento10j" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+        </tr>
+        <tr>
+            <td>11-</td>
+            <td><img id="assento11a" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento11b" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento11c" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento11d" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento11e" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento11f" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento11g" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento11h" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento11i" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+            <td><img id="assento11j" class="assento" src="./Imagens/acentoAzul.png" alt="Assento vazio"></td>
+        </tr>
+    </table>-->
